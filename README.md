@@ -71,7 +71,7 @@ python-dotenv
 ## Limitações
 
 - O vídeo precisa ter legendas disponíveis em Português ou Inglês
-- Vídeos muito longos podem consumir muitos tokens — descomente a linha `texto_completo = texto_completo[:20000]` no script para limitar
+- Vídeos muito longos podem consumir muitos tokens — a transcrição é cortada em `LIMITE_CARACTERES` (200.000 por padrão); ajuste a constante no script
 - O YouTube pode bloquear IPs que fazem muitas requisições seguidas. Se isso acontecer, na página do youtube-transcript-api
   (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception) tem um passo a passo ensinando como usar proxies e reverter a situação
 
